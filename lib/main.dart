@@ -9,6 +9,25 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
         title: 'intrinsic',
         home: Scaffold(
+            body: Material(
+              color: Colors.blue,
+              child: SafeArea(
+                child: SizedBox.expand(
+                  child: Card(color: Colors.yellowAccent),
+                ),
+              ),
+            )
+        )
+    );
+  }
+}
+
+class MyApp3 extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+        title: 'intrinsic',
+        home: Scaffold(
           appBar: AppBar(title: Text('Stack')),
           body: Center(
             child: Container(
